@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <title>YouTalk — Статья</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="description" content="Блог YouTalk: психотерапия, самопомощь, отношения и личные границы." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+
+</head>
+<body>
+<header class="header" role="banner">
+  <div class="container header__bar">
+    <a class="logo" href="index.html" aria-label="YouTalk на главную">
+      <img class="logo__img" src="img/icons/logo.svg" alt="" width="28" height="28" />
+      <span class="logo__text">YouTalk</span>
+    </a>
+
+    <a class="skip-link" href="#content">Перейти к контенту</a>
+
+    <button class="btn btn--ghost header__menu-toggle" aria-expanded="false" aria-controls="main-nav" id="menuBtn">
+      <svg class="icon" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      Меню
+    </button>
+
+    <nav class="nav" id="main-nav" aria-label="Основная навигация">
+      <ul class="nav__list">
+        <li class="nav__item"><a class="nav__link nav__link--active" href="index.html" aria-current="page">Блог</a></li>
+        <li class="nav__item"><a class="nav__link" href="#" aria-disabled="true">О сервисе</a></li>
+        <li class="nav__item"><a class="nav__link" href="#" aria-disabled="true">Психологи</a></li>
+        <li class="nav__item"><a class="nav__link" href="#" aria-disabled="true">Для компаний</a></li>
+      </ul>
+    </nav>
+
+    <div class="header__actions" role="group" aria-label="Действия">
+      <a class="btn btn--ghost" href="#search" aria-label="Поиск">
+        <svg class="icon" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2" fill="none"/><path d="M20 20l-3.2-3.2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <span class="btn__text">Поиск</span>
+      </a>
+      <a class="btn btn--primary" href="#" aria-disabled="true">Подобрать психолога</a>
+    </div>
+  </div>
+</header>
+
+<main id="content" class="main" role="main">
+  <article class="article container" itemscope itemtype="https://schema.org/Article">
+    <header class="article__header">
+      <a class="article__crumbs" href="index.html">← Ко всем статьям</a>
+      <h1 class="article__title" itemprop="headline">Ответственны ли мы за чужие чувства</h1>
+      <div class="article__meta">
+        <img class="avatar" src="img/icons/avatar.svg" alt="" width="32" height="32" />
+        <span class="author" itemprop="author">Мария Иванова</span>
+        <time class="date" datetime="2025-08-10" itemprop="datePublished">10 августа 2025</time>
+        <span class="read-time">7 мин чтения</span>
+      </div>
+      <figure class="article__cover">
+        <img src="img/photos/hero-placeholder.svg" alt="Иллюстрация к статье" width="960" height="540" itemprop="image"/>
+        <figcaption class="article__caption">Иллюстрация: поддержка и эмпатия без самопожертвования</figcaption>
+      </figure>
+    </header>
+
+    <div class="article__body" itemprop="articleBody">
+      <p>Чужие эмоции — это их ответственность. Наши границы — наша. Но на практике всё смешивается: мы чувствуем вину, стыд и обязанность «спасти» другого.</p>
+      <h2 id="why">Почему так происходит</h2>
+      <p>С детства мы учимся мирить, подстраиваться, «быть удобными». В зрелости это выливается в гиперответственность за чувства окружающих.</p>
+      <ul>
+        <li>Страх быть «плохим»;</li>
+        <li>Опыт травмирующих отношений;</li>
+        <li>Низкая самооценка и размытые границы.</li>
+      </ul>
+      <h2 id="how">Как разделять ответственность</h2>
+      <ol>
+        <li><strong>Называйте</strong> свои чувства и потребности.</li>
+        <li><strong>Говорите «нет»</strong> без оправданий.</li>
+        <li><strong>Предлагайте поддержку</strong>, а не спасение.</li>
+      </ol>
+      <blockquote>Сочувствие ≠ спасательство. Забота о себе — обязательна.</blockquote>
+      <p>Если самостоятельно трудно — обратитесь к специалисту. <a href="#" aria-disabled="true">Подобрать психолога</a>.</p>
+    </div>
+
+    <footer class="article__footer">
+      <div class="article__tags" role="list" aria-label="Теги статьи">
+        <a class="chip" href="#" role="listitem" aria-disabled="true">Границы</a>
+        <a class="chip" href="#" role="listitem" aria-disabled="true">Отношения</a>
+        <a class="chip" href="#" role="listitem" aria-disabled="true">Самопомощь</a>
+      </div>
+      <nav class="article__pager" aria-label="Навигация по статьям">
+        <a class="pager__link pager__link--prev" href="article.html" aria-disabled="true">← Предыдущая</a>
+        <a class="pager__link pager__link--next" href="article.html" aria-disabled="true">Следующая →</a>
+      </nav>
+    </footer>
+  </article>
+</main>
+<footer class="footer" role="contentinfo">
+  <div class="container footer__grid">
+    <div class="footer__brand">
+      <a class="logo" href="index.html">
+        <img class="logo__img" src="img/icons/logo.svg" alt="" width="28" height="28" />
+        <span class="logo__text">YouTalk</span>
+      </a>
+      <p class="subtle">Материалы о психотерапии, самопомощи и личных границах. Пишут практикующие психологи и редакция.</p>
+    </div>
+    <div>
+      <h3 class="footer__title">Разделы</h3>
+      <ul class="list">
+        <li><a href="index.html#latest">Последнее</a></li>
+        <li><a href="index.html#popular">Популярное</a></li>
+        <li><a href="#" aria-disabled="true">Темы</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="footer__title">Мы в соцсетях</h3>
+      <div class="socials" role="group" aria-label="Социальные сети">
+        <a class="socials__link" href="#" aria-label="Telegram" aria-disabled="true"><img src="img/icons/telegram.svg" alt="" width="24" height="24" /></a>
+        <a class="socials__link" href="#" aria-label="VK" aria-disabled="true"><img src="img/icons/vk.svg" alt="" width="24" height="24" /></a>
+        <a class="socials__link" href="#" aria-label="YouTube" aria-disabled="true"><img src="img/icons/youtube.svg" alt="" width="24" height="24" /></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer__legal">
+    <div class="container footer__legal-inner">
+      <small>© 2025 YouTalk. Все права защищены.</small>
+      <a href="#" aria-disabled="true">Политика конфиденциальности</a>
+    </div>
+  </div>
+</footer>
+
+
+<script>
+  const btn = document.getElementById('menuBtn');
+  const nav = document.getElementById('main-nav');
+  if (btn && nav) {
+    btn.addEventListener('click', () => {
+      const expanded = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!expanded));
+      nav.classList.toggle('nav--open');
+    });
+  }
+</script>
+</body>
+</html>

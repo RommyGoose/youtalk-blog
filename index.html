@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <title>YouTalk — Блог</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="description" content="Блог YouTalk: психотерапия, самопомощь, отношения и личные границы." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+
+</head>
+<body>
+<header class="header" role="banner">
+  <div class="container header__bar">
+    <a class="logo" href="index.html" aria-label="YouTalk на главную">
+      <img class="logo__img" src="img/icons/logo.svg" alt="" width="28" height="28" />
+      <span class="logo__text">YouTalk</span>
+    </a>
+
+    <a class="skip-link" href="#content">Перейти к контенту</a>
+
+    <button class="btn btn--ghost header__menu-toggle" aria-expanded="false" aria-controls="main-nav" id="menuBtn">
+      <svg class="icon" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      Меню
+    </button>
+
+    <nav class="nav" id="main-nav" aria-label="Основная навигация">
+      <ul class="nav__list">
+        <li class="nav__item"><a class="nav__link nav__link--active" href="index.html" aria-current="page">Блог</a></li>
+        <li class="nav__item"><a class="nav__link" href="#" aria-disabled="true">О сервисе</a></li>
+        <li class="nav__item"><a class="nav__link" href="#" aria-disabled="true">Психологи</a></li>
+        <li class="nav__item"><a class="nav__link" href="#" aria-disabled="true">Для компаний</a></li>
+      </ul>
+    </nav>
+
+    <div class="header__actions" role="group" aria-label="Действия">
+      <a class="btn btn--ghost" href="#search" aria-label="Поиск">
+        <svg class="icon" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2" fill="none"/><path d="M20 20l-3.2-3.2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <span class="btn__text">Поиск</span>
+      </a>
+      <a class="btn btn--primary" href="#" aria-disabled="true">Подобрать психолога</a>
+    </div>
+  </div>
+</header>
+
+<main id="content" class="main" role="main">
+  <section class="hero">
+    <div class="container hero__wrap">
+      <div class="hero__content">
+        <h1 class="hero__title">Блог о психотерапии и самопомощи</h1>
+        <p class="hero__lead">Помогаем разобраться в сложных чувствах и найти «своего» специалиста. Материалы от психологов и редакции.</p>
+        <div class="hero__badges">
+          <span class="badge"><img src="img/icons/shield.svg" alt="" width="16" height="16"/>Проверено экспертами</span>
+          <span class="badge"><img src="img/icons/heart.svg" alt="" width="16" height="16"/>Забота о вас</span>
+          <a class="btn btn--primary" href="#" aria-disabled="true">Начать подбор</a>
+        </div>
+      </div>
+      <figure class="hero__media">
+        <img src="img/photos/hero-placeholder.svg" alt="Иллюстрация: разговор с психологом" width="640" height="420"/>
+      </figure>
+    </div>
+  </section>
+
+  <div class="container layout">
+    <section class="section" id="latest" aria-labelledby="latest-title">
+      <h2 class="section__title" id="latest-title">Последние статьи</h2>
+      <div class="cards">
+        <article class="card blog-card">
+          <a class="card__link" href="article.html" aria-label="Открыть статью: Ответственны ли мы за чужие чувства">
+            <img class="card__media" src="img/photos/thumb-1.svg" alt="" width="400" height="225" />
+          </a>
+          <div class="card__body">
+            <div class="card__meta">
+              <span class="chip"><img src="img/icons/topic.svg" alt="" width="14" height="14" />Границы</span>
+              <time datetime="2025-08-10">10 августа 2025</time>
+              <span class="read-time" aria-label="Время чтения: 7 минут">7 мин</span>
+            </div>
+            <h3 class="card__title"><a href="article.html">Ответственны ли мы за чужие чувства</a></h3>
+            <p class="card__excerpt">Как не растворяться в чужих эмоциях и сохранить уважение к себе и другим.</p>
+          </div>
+          <div class="card__footer">
+            <img class="avatar" src="img/icons/avatar.svg" alt="" width="24" height="24" />
+            <span class="author">Мария Иванова, психолог</span>
+          </div>
+        </article>
+
+        <article class="card blog-card">
+          <a class="card__link" href="article.html" aria-label="Открыть статью: Что делать, если я ничего не хочу">
+            <img class="card__media" src="img/photos/thumb-2.svg" alt="" width="400" height="225" />
+          </a>
+          <div class="card__body">
+            <div class="card__meta">
+              <span class="chip"><img src="img/icons/topic.svg" alt="" width="14" height="14" />Выгорание</span>
+              <time datetime="2025-07-29">29 июля 2025</time>
+              <span class="read-time" aria-label="Время чтения: 6 минут">6 мин</span>
+            </div>
+            <h3 class="card__title"><a href="article.html">Что делать, если я ничего не хочу</a></h3>
+            <p class="card__excerpt">Разбираемся, когда это нормальная пауза, а когда — сигнал о помощи.</p>
+          </div>
+          <div class="card__footer">
+            <img class="avatar" src="img/icons/avatar.svg" alt="" width="24" height="24" />
+            <span class="author">Ольга Петрова, психотерапевт</span>
+          </div>
+        </article>
+
+        <article class="card blog-card">
+          <a class="card__link" href="article.html" aria-label="Открыть статью: Личные границы на работе">
+            <img class="card__media" src="img/photos/thumb-3.svg" alt="" width="400" height="225" />
+          </a>
+          <div class="card__body">
+            <div class="card__meta">
+              <span class="chip"><img src="img/icons/topic.svg" alt="" width="14" height="14" />Работа</span>
+              <time datetime="2025-07-15">15 июля 2025</time>
+              <span class="read-time" aria-label="Время чтения: 5 минут">5 мин</span>
+            </div>
+            <h3 class="card__title"><a href="article.html">Личные границы на работе</a></h3>
+            <p class="card__excerpt">Учимся говорить «нет» без чувства вины и строить здоровые отношения в команде.</p>
+          </div>
+          <div class="card__footer">
+            <img class="avatar" src="img/icons/avatar.svg" alt="" width="24" height="24" />
+            <span class="author">Иван Смирнов, психолог</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <aside class="aside" aria-label="Боковая панель">
+      <section class="panel">
+        <h2 class="panel__title">Подбор по теме</h2>
+        <ul class="list">
+          <li><a href="#" aria-disabled="true"><img src="img/icons/tag.svg" alt="" width="16" height="16" /> Тревога</a></li>
+          <li><a href="#" aria-disabled="true"><img src="img/icons/tag.svg" alt="" width="16" height="16" /> Отношения</a></li>
+          <li><a href="#" aria-disabled="true"><img src="img/icons/tag.svg" alt="" width="16" height="16" /> Самооценка</a></li>
+        </ul>
+      </section>
+
+      <section class="panel">
+        <h2 class="panel__title">Популярное</h2>
+        <ul class="list">
+          <li><a href="article.html">Как не заговаривать себя в тупик</a> <time datetime="2025-06-10">10 июн</time></li>
+          <li><a href="article.html">Почему «держать лицо» не всегда полезно</a> <time datetime="2025-05-22">22 мая</time></li>
+          <li><a href="article.html">Эмоциональная гигиена на каждый день</a> <time datetime="2025-05-05">5 мая</time></li>
+        </ul>
+      </section>
+    </aside>
+  </div>
+</main>
+<footer class="footer" role="contentinfo">
+  <div class="container footer__grid">
+    <div class="footer__brand">
+      <a class="logo" href="index.html">
+        <img class="logo__img" src="img/icons/logo.svg" alt="" width="28" height="28" />
+        <span class="logo__text">YouTalk</span>
+      </a>
+      <p class="subtle">Материалы о психотерапии, самопомощи и личных границах. Пишут практикующие психологи и редакция.</p>
+    </div>
+    <div>
+      <h3 class="footer__title">Разделы</h3>
+      <ul class="list">
+        <li><a href="index.html#latest">Последнее</a></li>
+        <li><a href="index.html#popular">Популярное</a></li>
+        <li><a href="#" aria-disabled="true">Темы</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="footer__title">Мы в соцсетях</h3>
+      <div class="socials" role="group" aria-label="Социальные сети">
+        <a class="socials__link" href="#" aria-label="Telegram" aria-disabled="true"><img src="img/icons/telegram.svg" alt="" width="24" height="24" /></a>
+        <a class="socials__link" href="#" aria-label="VK" aria-disabled="true"><img src="img/icons/vk.svg" alt="" width="24" height="24" /></a>
+        <a class="socials__link" href="#" aria-label="YouTube" aria-disabled="true"><img src="img/icons/youtube.svg" alt="" width="24" height="24" /></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer__legal">
+    <div class="container footer__legal-inner">
+      <small>© 2025 YouTalk. Все права защищены.</small>
+      <a href="#" aria-disabled="true">Политика конфиденциальности</a>
+    </div>
+  </div>
+</footer>
+
+
+<script>
+  // Mobile menu toggle with ARIA
+  const btn = document.getElementById('menuBtn');
+  const nav = document.getElementById('main-nav');
+  if (btn && nav) {
+    btn.addEventListener('click', () => {
+      const expanded = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!expanded));
+      nav.classList.toggle('nav--open');
+    });
+  }
+</script>
+</body>
+</html>
